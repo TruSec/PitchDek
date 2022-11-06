@@ -18,15 +18,6 @@
 \RequirePackage{hyperref}
 \RequirePackage{titling}
 \RequirePackage{multicol}
-\RequirePackage{graphicx,xcolor}
-	\definecolor{colgroen}{rgb}{0.1137,0.5529,0.6902} %Oude kleur
-	\definecolor{collichtblauw}{RGB}{106,194,238}
-	\definecolor{grijs}{rgb}{0.25,0.25,0.25}
-	\definecolor{colblauw1}{RGB}{29,141,176} %Hoofdblauw nieuwe huisstijl
-	\definecolor{colblauw2}{RGB}{220,231,240} %Secundair blauw: heel lichtblauw
-	\definecolor{colblauw3a}{RGB}{82,189,236} %Tertiair blauw (accent): licht
-	\definecolor{colblauw3b}{RGB}{30,110,135} %Tertiair blauw (accent): donker
-	\definecolor{colblauw3c}{RGB}{12,73,92} %Tertiair blauw (accent): donkerst
 \RequirePackage{lastpage}
 \RequirePackage{tikz}
 	\usetikzlibrary{arrows}
@@ -62,7 +53,7 @@
 \lhead{}
 \chead{}
 \rhead{\begin{tikzpicture}[inner sep=0mm]
-         \fill[colblauw3a] (-0.15,0) rectangle (0,1.2);
+         %\fill[colblauw3a] (-0.15,0) rectangle (0,1.2);
          \node[anchor=west] at ( 0.5,0.6) {\includegraphics[height=1.5cm]{trucolcircle.pdf}};
       \end{tikzpicture}}
 \lfoot{\begin{tabular}[b]{@{}l@{}}
@@ -77,7 +68,7 @@
      \node at (current page.south west)
      {
      \begin{tikzpicture}[remember picture, overlay,inner sep=0mm]
-         \fill[colblauw3a] (17.5,26.87) rectangle (17.65,28.07);
+         %\fill[colblauw3a] (17.5,26.87) rectangle (17.65,28.07);
          \node[anchor=north west] at ( 3.0,28.2) {\includegraphics[height=1.5cm]{\Logo}};
          \node[anchor=north east] at ( 19,28.2) {\includegraphics[height=1.5cm]{trucolcircle.pdf}};
          \node[anchor=east] at (17,27.47) {

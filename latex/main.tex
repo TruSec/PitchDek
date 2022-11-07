@@ -11,6 +11,17 @@
 %\usepackage{libertine}
 \usepackage{textcomp}
 \usepackage{eurosym}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+\urlstyle{same}
 
 \newcommand{\meuro}{\text{\euro}}
 \makeatletter
@@ -79,7 +90,15 @@
  total={165mm,265mm},
  left=1in,
  top=1.7in,
+ footskip=25pt,
  }
+
+ % Use footer
+ \pagestyle{fancy}
+ \cfoot{\textcolor{gray}{Department of Theoretical Physics, Mars University}}
+ \renewcommand{\footrulewidth}{0.4pt}
+ \let\FootRule\footrule
+ \renewcommand\footrule{\textcolor{gray}{\FootRule}}
 
 \usepackage{amsmath}%To be able to use split in equation
 

@@ -58,7 +58,7 @@
       \end{tikzpicture}}
 \lfoot{\begin{tabular}[b]{@{}l@{}}
     \footnotesize{\thetitle}\\
-    \footnotesize{\theauthor}
+    %\footnotesize{\theauthor}
   \end{tabular}}
 \cfoot{}
 \rfoot{\footnotesize{\thepage/\pageref{LastPage}}}
@@ -77,7 +77,7 @@
          \node[anchor=south east] at (19,24) {
                    \begin{tabular}{@{}r@{}}
                         \large\bf\thetitle\\[.5cm]
-                        \large\theauthor\vphantom{Ky}
+                        %\large\theauthor\vphantom{Ky}
                    \end{tabular}};
          \node[anchor=south west] at (3,24) {
 					 \begin{tabular}{@{}l@{}}

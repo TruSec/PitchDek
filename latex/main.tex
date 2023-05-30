@@ -216,22 +216,22 @@ showstringspaces=false            %
 % Create abstract.
 \ifx\homepath\overleafhome
     % Overleaf compilation.
-    \input{Chapters/0_challenge.tex} %\newpage
-    \input{Chapters/1_solution.tex} %\newpage
-    \input{Chapters/2_market_opportunity.tex} %\newpage
-  	\input{Chapters/3_competition.tex} %\newpage
-    \input{Chapters/4_market_strategy.tex} %\newpage
-  	\input{Chapters/5_team.tex} %\newpage
-  	\input{Chapters/6_impact.tex} %\newpage
+    \input{chapters/0_challenge.tex} %\newpage
+    \input{chapters/1_solution.tex} %\newpage
+    \input{chapters/2_market_opportunity.tex} %\newpage
+  	\input{chapters/3_competition.tex} %\newpage
+    \input{chapters/4_market_strategy.tex} %\newpage
+  	\input{chapters/5_team.tex} %\newpage
+  	\input{chapters/6_impact.tex} %\newpage
 \else
     % Local compilation
-    \input{latex/Chapters/0_challenge.tex} %\newpage
-    \input{latex/Chapters/1_solution.tex} %\newpage
-    \input{latex/Chapters/2_market_opportunity.tex} %\newpage
-  	\input{latex/Chapters/3_competition.tex} %\newpage
-    \input{latex/Chapters/4_market_strategy.tex} %\newpage
-  	\input{latex/Chapters/5_team.tex} %\newpage
-  	\input{latex/Chapters/6_impact.tex} %\newpage
+    \input{latex/chapters/0_challenge.tex} %\newpage
+    \input{latex/chapters/1_solution.tex} %\newpage
+    \input{latex/chapters/2_market_opportunity.tex} %\newpage
+  	\input{latex/chapters/3_competition.tex} %\newpage
+    \input{latex/chapters/4_market_strategy.tex} %\newpage
+  	\input{latex/chapters/5_team.tex} %\newpage
+  	\input{latex/chapters/6_impact.tex} %\newpage
 \fi
 
 % Include bibliography
@@ -239,63 +239,5 @@ showstringspaces=false            %
 %\bibliography{references}
 %\addcontentsline{toc}{chapter}{Bibliography}
 
-% Include appendices
-\ifnum\pdfstrcmp{no_code}{\appendixtypes}=0
-  % Don't include any code appendices. Feel free to add manual appendices here.
-  \newpage
-  \begin{appendices}
-    \ifx\homepath\overleafhome
-        % Overleaf compilation.
-        \input{Appendices/manual_appendices.tex} %\newpage
-    \else
-        % Local compilation
-        \input{latex/Appendices/manual_appendices_from_root.tex} %\newpage
-    \fi
-  \end{appendices}
-\fi
-
-% Include project code only.
-\ifnum\pdfstrcmp{project_code_only}{\appendixtypes}=0
-  \newpage
-  \begin{appendices}
-    \ifx\homepath\overleafhome
-        % Overleaf compilation.
-        \input{Appendices/project_code_appendices.tex} %\newpage
-    \else
-        % Local compilation
-        \input{latex/Appendices/project_code_appendices_from_root.tex} %\newpage
-    \fi
-  \end{appendices}
-\fi
-
-% Include only the code used to export the images, code etc. Skip project code.
-\ifnum\pdfstrcmp{export_code}{\appendixtypes}=0
-  \newpage
-  \begin{appendices}
-    \ifx\homepath\overleafhome
-        % Overleaf compilation.
-        \input{Appendices/export_code_appendices.tex} %\newpage
-    \else
-        % Local compilation
-        \input{latex/Appendices/export_code_appendices.tex} %\newpage
-    \fi
-  \end{appendices}
-\fi
-
-% Include project code and the code used to export the images, code etc.
-\ifnum\pdfstrcmp{project_and_export_code}{\appendixtypes}=0
-  \newpage
-  \begin{appendices}
-    \ifx\homepath\overleafhome
-        % Overleaf compilation.
-        \input{Appendices/project_code_appendices.tex} %\newpage
-        \input{Appendices/export_code_appendices.tex} %\newpage
-    \else
-        % Local compilation
-        \input{latex/Appendices/project_code_appendices_from_root.tex} %\newpage
-        \input{latex/Appendices/export_code_appendices_from_root.tex} %\newpage
-    \fi
-  \end{appendices}
-\fi
 
 \end{document}

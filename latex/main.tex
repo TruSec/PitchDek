@@ -184,7 +184,7 @@ showstringspaces=false            %
 \crefname{appsec}{Appendix}{Appendices} % refer to appendix as appendix iso as section (use with text in
 %\title{}
 %\subtitle{}
-\title{Pitchdeck: TruCol\\\large A decentralised collaboration protocol for test-driven development}
+\title{Pitchdeck: TruSec\\\large A decentralised hedge against zero-day exploits}
 %\author{Authors:\\a-t-0}
 
 
@@ -216,22 +216,21 @@ showstringspaces=false            %
 % Create abstract.
 \ifx\homepath\overleafhome
     % Overleaf compilation.
-    \input{chapters/0_challenge.tex} %\newpage
-    \input{chapters/1_solution.tex} %\newpage
-    \input{chapters/2_market_opportunity.tex} %\newpage
-  	\input{chapters/3_competition.tex} %\newpage
-    \input{chapters/4_market_strategy.tex} %\newpage
-  	\input{chapters/5_team.tex} %\newpage
-  	\input{chapters/6_impact.tex} %\newpage
+    \input{chapters/0_value_prop.tex} %\newpage
+    \input{chapters/1_challenge.tex} %\newpage
+  	\input{chapters/2_market_opportunity.tex} %\newpage
+    \input{chapters/3_solution.tex} %\newpage
+  	\input{chapters/4_revenue.tex} %\newpage
+  	\input{chapters/5_roadmap.tex} %\newpage
 \else
     % Local compilation
-    \input{latex/chapters/0_challenge.tex} %\newpage
-    \input{latex/chapters/1_solution.tex} %\newpage
+    \input{latex/chapters/0_value_prop.tex} %\newpage
+    \input{latex/chapters/1_challenge.tex} %\newpage
     \input{latex/chapters/2_market_opportunity.tex} %\newpage
-  	\input{latex/chapters/3_competition.tex} %\newpage
-    \input{latex/chapters/4_market_strategy.tex} %\newpage
-  	\input{latex/chapters/5_team.tex} %\newpage
-  	\input{latex/chapters/6_impact.tex} %\newpage
+  	\input{latex/chapters/3_solution.tex} %\newpage
+    \input{latex/chapters/4_revenue.tex} %\newpage
+  	\input{latex/chapters/5_roadmap.tex} %\newpage
+  	%\input{latex/chapters/6_impact.tex} %\newpage
 \fi
 
 % Include bibliography

@@ -1,11 +1,11 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{trucolpitchdeck}[2022/11/06 TruCol Pitch Deck]
-\DeclareOption{trucol}{
-   \providecommand{\Logo}{trucol-logo.pdf}
-   }
-\DeclareOption{col}{
-   \renewcommand{\Logo}{trucolcircle.pdf}
-   }
+%\DeclareOption{trucol}{
+%   \providecommand{\Logo}{trucol-logo.pdf}
+%   }
+%\DeclareOption{col}{
+%   \renewcommand{\Logo}{trucolcircle.pdf}
+%   }
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ExecuteOptions{trucol} % Standard options.
 \ProcessOptions\relax
@@ -70,7 +70,7 @@
      \begin{tikzpicture}[remember picture, overlay,inner sep=0mm]
          %\fill[colblauw3a] (17.5,26.87) rectangle (17.65,28.07);
          %\node[anchor=north west] at ( 3.0,28.2) {\includegraphics[height=1.5cm]{\Logo}};
-         \node[anchor=north west] at ( 2.3,28.2) {\includegraphics[height=1.5cm]{\Logo}};
+         %\node[anchor=north west] at ( 2.3,28.2) {\includegraphics[height=1.5cm]{\Logo}};
          %\node[anchor=north east] at ( 19,28.2) {\includegraphics[height=1.5cm]{trucolcircle.pdf}};
          \node[anchor=east] at (17,27.47) {
          \footnotesize\begin{tabular}{@{}r@{}}\theaddress\end{tabular}
